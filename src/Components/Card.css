@@ -1,0 +1,98 @@
+.card {
+  margin: 0;
+  max-width: 176px;
+  position: relative;
+  border-radius: 9px;
+}
+
+.card--status {
+  padding: 4px;
+  margin: 0;
+  position: absolute;
+  color: #222;
+  text-align: center;
+  font-size: 10.24px;
+  line-height: 110%;
+  background: #FFF;
+  border-radius: 2px;
+  left: 6px;
+  top: 6px;
+}
+
+.card--cover-photo {
+  width: 176px;
+  height: 235px; /* Allow the height to adjust based on the image */
+  margin: 0;
+  border-radius: 9px;
+}
+
+.card--star {
+  width: 14px;
+}
+
+.card--rating {
+  gap: 2px;
+  display: flex;
+  height: 14px;
+  align-items: center;
+  margin: 0;
+}
+
+.rating-text {
+  margin: 0;
+  color: #222;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 110%;
+}
+
+.country {
+  margin: 8px 0 0 0;
+  margin: 0;
+  color: #918E9B;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 110%;
+}
+
+.card--course {
+  margin: 8px 0 0 0;
+  color: #222;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 110%;
+}
+
+.price {
+  margin: 8px 0 0 0;
+  color: #222;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.person {
+  font-weight: 300;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .card {
+    max-width: calc(50% - 20px); /* Show two cards per row with spacing */
+  }
+}
+
+/* Media Query for screens between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    max-width: calc(33.33% - 20px); /* Show three cards per row with spacing */
+  }
+}
+
+/* Media Query for screens larger than 1024px */
+@media (min-width: 1025px) {
+  .card {
+    max-width: 176px; /* Reset to the original width */
+  }
+}

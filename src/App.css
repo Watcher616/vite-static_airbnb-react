@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.app--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  border-radius: 8.95px;
+  background: #FFF;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.card--container {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  flex-wrap: nowrap; /* Allow cards to wrap to the next line */
+  gap: 20px; /* Add spacing between cards */
+  padding: 10px 10px 10px 37px;
+}
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 500px) {
+  .app--container {
+    width: 100%;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card--container {
+    overflow-x: scroll;
+    padding: 10px 10px 10px 27px;
+  }
+}
+
+/* Media Query for screens between 501px and 768px */
+@media (min-width: 501px) and (max-width: 768px) {
+  .app--container {
+    width: 100%;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card--container {
+    overflow-x: scroll;
+    padding: 10px 10px 10px 27px;
+  }
+}
+
+/* Media Query for screens larger than 768px */
+@media (min-width: 769px) {
+  .app--container {
+    width: 500px;
+    border-radius: 8.95px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card--container {
+    overflow-x: auto;
+    padding: 10px 10px 10px 37px;
+  }
+}

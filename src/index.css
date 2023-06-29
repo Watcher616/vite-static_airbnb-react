@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  min-width: 550px;
+  min-height: 853px;
+  display: flex;
+  justify-content: center;
+  background-color: #c6c2c2;
+}
+
+/* Media Query for screens smaller than 550px */
+@media (max-width: 550px) {
+  body {
+    min-width: auto;
+    min-height: auto;
+    background: #FFF;
+  }
+}
+
+/* Media Query for screens between 551px and 1200px */
+@media (min-width: 551px) and (max-width: 1200px) {
+  body {
+    min-width: 100%;
+    min-height: 100vh;
+    background: #c6c2c2;
+  }
+}
+
+/* Media Query for screens larger than 1200px */
+@media (min-width: 1201px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
